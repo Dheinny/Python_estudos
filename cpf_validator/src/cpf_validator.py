@@ -1,5 +1,6 @@
 import re
 
+
 class CPFValidator():
     def retira_formatacao(self, num_cpf):
         signs_list = [".", ",", "-", "_", "(", ")", "/", " "]
@@ -18,6 +19,8 @@ class CPFValidator():
     def valida_cpf(self, num_cpf):
         if not re.search("^\\d{11}$", num_cpf):
             raise ValueError
+        if all(d == num_cpf[0] for d in num_cpf):
+            return False
         dv1 = int(num_cpf[9])
         dv2 = int(num_cpf[10])
         mod_11 = self.calcula_mod11(num_cpf, 9)
