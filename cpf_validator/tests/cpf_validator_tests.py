@@ -1,5 +1,5 @@
 import unittest
-from src.cpf_validator import CPFValidator
+from cpf_validator.src.cpf_validator import CPFValidator
 
 class CPFValidatorTests(unittest.TestCase):
 

@@ -1,0 +1,114 @@
+DESAFIO: NUMEROS ROMANOS
+
+duas funções:
+1 - validação do número fornecido. se é positivo maior que 0 e menor que 3999 -> valida_numero(num)
+2 - conversão do número validado -> numero_para_romano(num)
+
+essas funções devem estar num arquivo com a nomenclatura converte_romano.py (onde <nome> é o primeiro nome de cada um de vocês)
+
+IMPORTANTE: UTILIZAREMOS METODOLOGIA TDD (Test Driven Development): primeiro implementamos os testes, depois o programa em si
+podem utilizar o unittest (https://docs.python.org/2/library/unittest.html#basic-example) para implementação de testes.
+
+> mantenham o programa separado dos testes..
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
+
+###########################################################################################
+
+DESAFIO: DISTANCIA DE ZEROS
+
+uma função que verifique a maior quantidade de zeros que estejam juntos em uma dada string com diversos algarismos (sem espaços) -> conta_zeros(texto) : retorno numerico
+
+ATENÇÃO PARA OS TESTES E PARA PERFORMANCE DO ALGORITMO
+
+MAIS IMPORTANTE: TDD (Test Driven Development)
+podem utilizar o unittest (https://docs.python.org/2/library/unittest.html#basic-example) para implementação de testes.
+
+> mantenham o programa separado dos testes..
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
+
+###########################################################################################
+
+DESAFIO: GERADOR DE SENHAS
+
+gerador de senhas através da chamada de uma função que não receba parâmetros -> gera_senha() : retorno string
+
+MAIS IMPORTANTE: TDD (Test Driven Development)
+podem utilizar o unittest (https://docs.python.org/2/library/unittest.html#basic-example) para implementação de testes.
+
+> mantenham o programa separado dos testes..
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
+
+###########################################################################################
+
+DESAFIO: CLASSIFICADOR DE SENHAS
+
+validador de senhas com classificação fraca(0), média(1), forte(2) -> classifica_senha(pwd) : retorno numerico
+
+MAIS IMPORTANTE: TDD (Test Driven Development)
+podem utilizar o unittest (https://docs.python.org/2/library/unittest.html#basic-example) para implementação de testes.
+
+> mantenham o programa separado dos testes..
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
+
+###########################################################################################
+
+DESAFIO: CRIPTOGRAFIA DE SENHAS
+
+funções geradoras de hash de senhas:
+1 - algoritmo MD5 - gerador de hash MD5 para senhas -> hash_md5(pwd) : retorno string
+2 - algoritmo SHA256 - gerador de hash SHA256 para senhas -> hash_sha256(pwd) : retorno string
+
+MAIS IMPORTANTE: TDD (Test Driven Development)
+podem utilizar o unittest (https://docs.python.org/2/library/unittest.html#basic-example) para implementação de testes.
+
+> mantenham o programa separado dos testes..
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
+
+###########################################################################################
+
+DESAFIO: WEBSERVICE
+
+utilizem o framework AIOHTTP (https://aiohttp.readthedocs.io/en/stable/) para implementar um webservice.
+
+exponha os serviços de:
+  - conversão de números romanos no endpoint ./romano/{numero}
+      onde a resposta deve ser o número em algarismos romanos
+
+  - validação de cpfs no endpoint ./valida_cpf/{cpf}
+      onde a resposta deve ser o cpf e sua classificação (válido/inválido)
+
+  - distancia de zeros no endpoint ./dist_zeros/{string}
+      onde a resposta deve ser a string e a maior quantidade de zeros consecutivos
+
+  - gerador de senhas + classificador de senhas + hash no endpoint ./gera_senha/
+      onde a resposta deve ser a senha gerada, sua classificação e o hash calculado
+
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
+
+###########################################################################################
+
+DESAFIO: GERAÇÃO DE PÁGINA (HTML) RESPOSTA
+
+formatar página html de resposta dos serviços expostos via webservice diferenciando as respostas com fontes, formatações e fontes variadas.
+
+> UTILIZAR MESMO REPOSITORIO DO PROJETO WEBSERVICE
+
+###########################################################################################
+
+DESAFIO: GERAÇÃO DE PÁGINA (HTML) ENTRADA
+
+criar página html de entrada (para chamda dos webservices) que realizará a chamada dos diferentes endpoints do exercício WEBSERVICE
+
+> UTILIZAR MESMO REPOSITORIO DO PROJETO WEBSERVICE
+
+###########################################################################################
+
+DESAFIO: MOEDAS
+
+uma função que retorne o conjunto de moedas (de maiores valores) que equivalem a um valor fornecido como parâmetro -> valor_moedas(vlr)
+
+MAIS IMPORTANTE: TDD (Test Driven Development)
+podem utilizar o unittest (https://docs.python.org/2/library/unittest.html#basic-example) para implementação de testes.
+
+> mantenham o programa separado dos testes..
+> COLOQUEM NO GIT INDIVIDUAL DE VOCÊS SEPARADO EM UM NOVO PROJETO E ME ENVIEM OS LINKS
